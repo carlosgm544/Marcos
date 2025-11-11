@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from "lucide-react";
+import { Input } from "lucide-react";
+import { Textarea } from "lucide-react";
 import { Mail, BookOpenText, User } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -25,10 +25,8 @@ export default function Home() {
           Una historia sobre lo que pudo haber sido... y no fue.
         </motion.p>
         <div className="mt-6 flex justify-center gap-4">
-          <Button size="lg">Leer un fragmento</Button>
-          <Button variant="outline" size="lg">
-            Comprar el libro
-          </Button>
+          <button className="px-6 py-3 bg-black text-white rounded-xl text-lg">Leer un fragmento</button>
+          <button className="px-6 py-3 border border-black rounded-xl text-lg">Comprar el libro</button>
         </div>
       </section>
 
@@ -57,15 +55,14 @@ export default function Home() {
       <section className="grid gap-4">
         <h2 className="text-2xl font-semibold">Contacto</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <Input placeholder="Tu nombre" icon={<User />} />
-          <Input placeholder="Tu correo electrónico" icon={<Mail />} />
+          <input className="border p-2 rounded" placeholder="Tu nombre" />
+          <input className="border p-2 rounded" placeholder="Tu correo electrónico" />
         </div>
-        <Textarea placeholder="Escribe tu mensaje..." rows={4} />
-        <Button className="w-fit">Enviar mensaje</Button>
+        <textarea className="border p-2 rounded" placeholder="Escribe tu mensaje..." rows={4} />
+        <button className="px-6 py-2 bg-black text-white rounded-xl w-fit">Enviar mensaje</button>
       </section>
     </main>
   );
 }
-    </main>
   );
 }
