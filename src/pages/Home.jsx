@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -64,6 +63,9 @@ export default function Home() {
         <Textarea placeholder="Escribe tu mensaje..." rows={4} />
         <Button className="w-fit">Enviar mensaje</Button>
       </section>
+    </main>
+  );
+}
     </main>
   );
 }
